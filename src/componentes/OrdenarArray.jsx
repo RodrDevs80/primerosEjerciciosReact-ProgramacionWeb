@@ -9,8 +9,8 @@ export const OrdenarArray = () => {
     if(isNaN(valor)){
         alert('Ingrese un numero valido!📢')
     }else{
-        numeros.push(Number(valor));
         const newNumeros = [...numeros];
+        newNumeros.push(Number(valor));
         setNumeros(newNumeros);
     }
     

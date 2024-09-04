@@ -5,8 +5,8 @@ export const EliminarDuplicados = () => {
     const [numeros,setNumeros]=useState([]);
     const [valor,setValor]=useState('');
     const agregarValorAlArray=()=>{
-     numeros.push(Number(valor));
      const nuevoNumeros= [...numeros];
+     nuevoNumeros.push(Number(valor));
      setNumeros(nuevoNumeros);
     }
     const eliminarDuplicados=()=>{
